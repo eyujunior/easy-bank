@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  margin-bottom: 4rem;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media only screen and (min-width: 1000px) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    margin-bottom: 5rem;
+    &--1,
+    &--2 {
+      width: 100%;
+    }
+
+    &--1 {
+      position: relative;
+      z-index: 1;
+    }
+
+    &--2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      @media only screen and (min-width: 1000px) {
+        width: 50%;
+        right: 0;
+        left: initial;
+      }
+    }
+    @media only screen and (min-width: 1000px) {
+      width: 50%;
+    }
+  }
+
+  &-content {
+    position: relative;
+    text-align: center;
+
+    .heading-primary {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      text-transform: capitalize;
+      color: $dark-blue;
+
+      span {
+        display: block;
+      }
+
+      @media only screen and (min-width: 1000px) {
+        font-size: 6rem;
+        line-height: 1.2;
+
+        span {
+          display: inline;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1000px) {
+      text-align: left;
+
+      .subtitle {
+        text-align: left;
+        margin: 0 0 4rem 0;
+        width: 60%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    padding-left: 5rem;
+  }
+}

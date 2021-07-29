@@ -1,0 +1,36 @@
+.btn {
+  padding: 1.3rem 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 5rem;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+
+  &-primary {
+    background: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+  }
+}
+.subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: $Grayish-Blue;
+  width: 80%;
+  margin: 0rem auto 4rem auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.section-header {
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: $dark-blue;
+
+  @media only screen and (min-width: 1000px) {
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
+}

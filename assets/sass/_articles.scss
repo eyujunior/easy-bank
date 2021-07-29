@@ -1,0 +1,41 @@
+.article {
+  background: $Light-Grayish-Blue;
+  padding: 2rem 4rem;
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+  }
+  &-item {
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 95%;
+    margin: 0 auto 4rem auto;
+    box-shadow: 0px 1.3rem 3.1rem -1.7rem rgba(0, 0, 0, 0.2);
+  }
+  &-image {
+    width: 100%;
+  }
+  .content {
+    padding: 2rem;
+  }
+  .writer {
+    font-size: 1.3rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+  }
+
+  &-desc {
+    font-size: 1.6rem;
+    text-align: left;
+    color: $Grayish-Blue;
+  }
+}
